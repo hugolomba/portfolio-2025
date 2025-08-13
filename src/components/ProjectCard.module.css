@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--retro-blue);
-    width: 25rem;
+    max-width: 25rem;
     gap: 0.5rem;
     padding: 0.5rem;
     border-radius: 10px;
@@ -66,12 +66,16 @@
     text-decoration: underline;
 }
 
-.pinkBackground {
-    background-color: var(--pink);
+.burntOrangeBackground {
+    background-color: var(--burnt-orange);
 }
 
-.blueBackground {
-    background-color: var(--retro-blue);
+.fadedPinkBackground {
+    background-color: var(--faded-pink);
+}
+
+.turquoiseBackground {
+    background-color: var(--turquoise);
 }
 
 .redBackground {
@@ -82,8 +86,11 @@
     background-color: var(--retro-green);
 }
 
-.orangeBackground {
-    background-color: var(--orange);
+.petrolBlueBackground {
+    background-color: var(--petrol-blue);
+}
+.softPurpleBackground {
+    background-color: var(--soft-purple);
 }
 
 

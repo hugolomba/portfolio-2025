@@ -17,18 +17,33 @@ type ProjectCardProps = {
     project: Project;
 }
 
+let colorQueue: string[] = [];
+const backgroundColors: string[] = [
+  "burntOrangeBackground",
+  "fadedPinkBackground",
+  "turquoiseBackground",
+  "redBackground",
+  "greenBackground",
+  "petrolBlueBackground",
+  "softPurpleBackground"
+];
+
+function shuffle<T>(array: T[]): T[] {
+  return [...array].sort(() => Math.random() - 0.5);
+}
+
+function getNextBackgroundColor(): string {
+  if (colorQueue.length === 0) {
+    colorQueue = shuffle(backgroundColors);
+  }
+  return colorQueue.shift() as string;
+}
+
 
 
 
 export default function ProjectCard({ project }: ProjectCardProps) {
 
-    const backgroundColors: string[] = [
-    "pinkBackground",
-    "blueBackground",
-    "redBackground",
-    "greenBackground",
-    "orangeBackground"
-]
     const techColors: string[] = [
         "jsColor",
         "reactColor",
@@ -46,10 +61,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         return index !== -1 ? techColors[index % techColors.length] : "defaultColor";
     }
 
-    console.log("here", getTechColor(project.technologies[0]));
-
-const backgroundColor = backgroundColors[Math.floor(Math.random() * backgroundColors.length)];
-  
+    const backgroundColor = getNextBackgroundColor();
 
   return (
     <div className={`${styles.cardContainer} ${styles[backgroundColor]}`}>
@@ -59,6 +71,7 @@ const backgroundColor = backgroundColors[Math.floor(Math.random() * backgroundCo
         </div>
            <div className={`${styles.technologies}`}>
             {project.technologies.map((tech, index) => (
+                //
                 <span key={index} className={`${styles.technology} ${styles[getTechColor(tech)]}`}>{`#${tech} `}</span>
             ))}
         </div>

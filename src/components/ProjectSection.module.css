@@ -1,0 +1,66 @@
+.projectsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.projectsTitle {
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+
+.projectsContainer {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.paginationButton,
+.paginationNumber {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.paginationButton:hover:not(:disabled),
+.paginationNumber:hover {
+  background-color: #d9d9d9;
+  transform: translateY(-1px);
+}
+
+.active {
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+}
+
+.paginationButton:disabled {
+  background-color: #eaeaea;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+.paginationNumbers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .paginationButton,
+  .paginationNumber {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+  .paginationContainer {
+    gap: 5px;
+  }
+}
