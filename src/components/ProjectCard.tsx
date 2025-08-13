@@ -22,13 +22,31 @@ type ProjectCardProps = {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
 
-    const backgroundColors = [
+    const backgroundColors: string[] = [
     "pinkBackground",
     "blueBackground",
     "redBackground",
     "greenBackground",
     "orangeBackground"
 ]
+    const techColors: string[] = [
+        "jsColor",
+        "reactColor",
+        "nodeColor",
+        "mongoColor",
+        "expressColor",
+        "htmlColor",
+        "cssColor",
+        "muiColor",
+        "axiosColor"
+    ];
+
+    function getTechColor(tech: string): string {
+        const index = project.technologies.indexOf(tech);
+        return index !== -1 ? techColors[index % techColors.length] : "defaultColor";
+    }
+
+    console.log("here", getTechColor(project.technologies[0]));
 
 const backgroundColor = backgroundColors[Math.floor(Math.random() * backgroundColors.length)];
   
@@ -39,9 +57,9 @@ const backgroundColor = backgroundColors[Math.floor(Math.random() * backgroundCo
         <div className={styles.imageContainer}>
         <img src={project.images[0]} alt={project.title} className={styles.image} />
         </div>
-           <div className={styles.technologies}>
+           <div className={`${styles.technologies}`}>
             {project.technologies.map((tech, index) => (
-                <span key={index} className={styles.technology}>{`#${tech} `}</span>
+                <span key={index} className={`${styles.technology} ${styles[getTechColor(tech)]}`}>{`#${tech} `}</span>
             ))}
         </div>
         <p className={styles.description}>{project.description}</p>
