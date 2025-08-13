@@ -1,8 +1,11 @@
 .projectsSection {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
+    scroll-snap-align: start;
+
 }
 
 .projectsTitle {
@@ -17,13 +20,18 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+.paginationContainer {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
 
 .paginationButton,
 .paginationNumber {
   padding: 8px 14px;
   border: none;
   border-radius: 6px;
-  background-color: #f0f0f0;
+  background-color: var(--mustard-yellow);
   cursor: pointer;
   font-size: 14px;
   transition: background 0.2s, transform 0.1s;
@@ -31,7 +39,7 @@
 
 .paginationButton:hover:not(:disabled),
 .paginationNumber:hover {
-  background-color: #d9d9d9;
+  background-color: var(--petrol-blue);
   transform: translateY(-1px);
 }
 
@@ -52,6 +60,8 @@
   flex-wrap: wrap;
   gap: 5px;
 }
+
+
 
 /* Mobile */
 @media (max-width: 500px) {

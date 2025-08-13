@@ -2,6 +2,8 @@ nav {
     display: flex;
     justify-content: space-between;      
     width: 100%; 
+  scroll-snap-align: start;
+
 }
 
 .navList {

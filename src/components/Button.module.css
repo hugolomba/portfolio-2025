@@ -34,3 +34,44 @@ a {
     padding: 0.1em 0.2em;
     font-size: 1rem;
 }
+
+.paginationButton,
+.paginationNumber { 
+    font-weight: 0;
+padding: 0em 0.5em;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.paginationButton:hover:not(:disabled),
+.paginationNumber:hover {
+  background-color: #d9d9d9;
+  transform: translateY(-1px);
+}
+
+.active {
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+}
+
+.paginationButton:disabled {
+  background-color: #eaeaea;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+
+
+
+/* Mobile */
+@media (max-width: 500px) {
+  .paginationButton,
+  .paginationNumber {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+  .paginationContainer {
+    gap: 5px;
+  }
+}

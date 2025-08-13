@@ -1,0 +1,54 @@
+.heroContainer {
+    min-height: calc(100vh - 2rem);
+  display: flex;
+  align-items: center;
+  padding: 2rem 2rem 2rem 0;
+  gap: 6rem;
+
+  scroll-snap-align: start;
+}
+
+.heroName {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.heroInfo,
+.heroImageWrapper {
+  box-sizing: border-box;
+}
+
+.heroInfo {
+    /* padding: 2rem; */
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  /* overflow: hidden; */
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1em;
+}
+
+.heroGreeting {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--color-secondary);
+}
+
+
+.heroDescription{
+  font-size: 1.2rem;
+}
+
+.heroImageWrapper {
+  display: flex;
+  flex: 2; 
+  object-fit: contain;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroImage{
+    width: 30rem;
+}

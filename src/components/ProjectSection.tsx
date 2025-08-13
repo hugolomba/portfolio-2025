@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import projects from "../projects";
 import ProjectCard from "./ProjectCard";
 import style from "./ProjectSection.module.css";
+import Button from "./Button";
 
 const ProjectSection = () => {
   // Simulated list
@@ -10,7 +11,7 @@ const ProjectSection = () => {
   console.log(items);
 
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 3;
+  const itemsPerPage = 6;
 
   // Calculate the start and end index
   const indexOfLastItem = currentPage * itemsPerPage;
@@ -47,6 +48,8 @@ const ProjectSection = () => {
           Previous  
         </button>
 
+    
+
         {/* Page numbers */}
         <div className={style.paginationNumbers}>
              {Array.from({ length: totalPages }, (_, i) => (
@@ -59,13 +62,15 @@ const ProjectSection = () => {
           >
             {i + 1}
           </button>
-        ))}
+      
+      ))}
         </div>
        
 
         <button className={style.paginationButton} onClick={() => handlePageChange(currentPage + 1)} disabled={currentPage === totalPages}>
           Next
         </button>
+    
       </div>
     </section>
   );
