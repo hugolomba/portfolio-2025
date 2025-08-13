@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Paytone+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --main-text: #f9f4da;
+  --secondary-color: #fcba28;
+  --coal: #0f0d0e;
+  --charcoal: #231f20;
+  --green: #0ca95b;
+  --pink: #f38ba3;
+  --red: #ed203d;
+  --orange: #f87428;
+
+   --main-text-font: Outfit, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Oxygen-Sans", Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --secondary-text-font: "Paytone One", sans-serif;
+  --title-text-font: "Sofia Sans Extra Condensed", sans-serif;
+  --card-border: 0.15rem solid black;
+  --card-external-padding: 0.6rem;
+
+  /* // space  */
+  --retro-bg: #0f0d0e;
+  --retro-red: #d94d40;
+  --retro-blue: #5ac7c5;
+  --retro-green: #82d46e;
+  --retro-beige: #fdf3d8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%; /* 1rem = 16px */
+}
+
+body {
+  font-size: 1rem;
+  font-family: var(--main-text-font);
+
+
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* background-color: var(--retro-bg);
+  color: var(--main-text); */
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.projectsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 2rem;
+}
+
+
+@media (max-width: 768px) {
+  html {
+    font-size: 93.75%; /* 1rem = 15px */
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 87.5%; /* 1rem = 14px */
+  }
+}
