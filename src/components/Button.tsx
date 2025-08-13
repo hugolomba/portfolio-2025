@@ -5,12 +5,12 @@ type ButtonProps = {
   variant?: string;
   onClick?: () => void;
   href?: string;
-} & React.ButtonHTMLAttributes<HTMLButtonElement>;
+} & React.AnchorHTMLAttributes<HTMLAnchorElement> & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 export default function Button({ children, variant, onClick, ...rest }: ButtonProps) {
   return (
     <button className={`${styles.button} ${variant ? styles[variant] : ''}`} onClick={onClick} {...rest}>
-      <a className={`${styles.link} ${variant ? styles[variant] : ''}`} href={rest.href}>{children || ""}</a>
+      <a className={`${styles.link} ${variant ? styles[variant] : ''}`} href={rest.href} target="_blank" rel="noopener noreferrer">{children || ""}</a>
     </button>
   )
 }
