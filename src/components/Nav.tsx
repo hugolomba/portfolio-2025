@@ -6,13 +6,15 @@ export default function Nav() {
     <>
 
      <nav className={styles.nav}>
-        <Button>
+        <Button btnType='link' href="http://hugo-miranda.dev">
       HM :)
     </Button>
+
       <ul className={styles.navList}>
-        <li><Button href="http://hugo-miranda.dev">About</Button></li>
-        <li><Button href="#projects">Projects</Button></li>
-        <li><Button href="#contact">Contact</Button></li>
+        <li><a href='#'>About</a></li>
+        <li><a href='#'>Projects</a></li>
+        <li><a href='#'>Blog</a></li>
+        <li><Button btnType='link' href="#contact">Contact</Button></li>
       </ul>
     </nav>
     </>

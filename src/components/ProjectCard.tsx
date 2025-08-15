@@ -78,10 +78,10 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <p className={styles.description}>{project.description}</p>
      
         <div className={styles.links}>
-            <Button variant="cardButton" href={project.github} ><FaGithub /> GitHub</Button>
-            <Button variant="cardButton" href={project.link} ><TbWorld /> Demo</Button>
+            <Button btnType='link' variant="cardButton" href={project.github} ><FaGithub /> GitHub</Button>
+            <Button btnType='link' variant="cardButton" href={project.link} ><TbWorld /> Demo</Button>
         </div>
-        <Button variant="cardButton" href={project.link} target="">See More</Button>
+        <Button btnType="button" variant="cardButton" href={project.link} target="">See More</Button>
     </div>
   )
 }

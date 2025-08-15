@@ -3,7 +3,10 @@ import './App.css'
 import "./index.css"
 import Nav from './components/Nav'
 import ProjectSection from './components/ProjectSection'
-import HeroContainer from './components/HeroContainer'
+import HeroSection from "./components/HeroSection"  
+
+
+
 
 
 function App() {
@@ -12,10 +15,10 @@ function App() {
     
     <>
       <Nav  />
-      <HeroContainer />
+      <HeroSection/>
       <ProjectSection />
       </>
-     
+
     
   )
 }

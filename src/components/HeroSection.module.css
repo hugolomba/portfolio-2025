@@ -1,17 +1,18 @@
 .heroContainer {
-    min-height: calc(100vh - 2rem);
+  min-height: calc(100vh - 2rem);
   display: flex;
   align-items: center;
   padding: 2rem 2rem 2rem 0;
   gap: 6rem;
 
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
 }
 
 .heroName {
-    font-size: 4rem;
-    font-weight: 700;
+    font-size: 6rem;
+    font-weight: 900;
     color: var(--color-primary);
+    font-family: var(--title-font);
 }
 
 .heroInfo,
@@ -30,15 +31,18 @@
   gap: 1em;
 }
 
+
 .heroGreeting {
   font-size: 2rem;
   font-weight: 500;
   color: var(--color-secondary);
+  font-family: var(--text-font-1);
 }
 
 
 .heroDescription{
   font-size: 1.2rem;
+  font-family: var(--text-font-1);
 }
 
 .heroImageWrapper {

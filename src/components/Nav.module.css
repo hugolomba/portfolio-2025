@@ -2,13 +2,57 @@ nav {
     display: flex;
     justify-content: space-between;      
     width: 100%; 
-  scroll-snap-align: start;
+    align-items: center;
+    font-family: "Unigeo 32";
+;
 
 }
 
+
+
 .navList {
+    font-family: "Unigeo 64";
+    font-size: 1.4rem;
+    font-weight: 500;
     display: flex;
-    gap: 1.5rem;
+    gap: 4rem;
     list-style: none;
     padding: 0;
+    align-items: center;
+}
+
+
+
+.navList a {
+  position: relative;
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 600;
+  font-size: 1.2rem;
+  display: inline-block;
+  padding-left: 1.5rem; 
+  transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), color 0.3s ease;
+}
+
+
+.navList a::before {
+  content: '→'; 
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  font-size: 1.2rem;
+  transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transform: translateX(-0.5rem);
+  color: var(--main-yellow); 
+}
+
+
+.navList a:hover {
+  transform: translateX(0.5rem);
+  color: var(--yellow); 
+}
+
+.navList a:hover::before {
+  opacity: 1;
+  transform: translateX(0); 
 }
