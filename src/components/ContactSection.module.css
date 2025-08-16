@@ -1,0 +1,36 @@
+.contactSection {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    display: flex;
+    gap: 4rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contactHeader {
+  
+}
+
+.contactTitle {
+  font-size: 3rem;
+    font-weight: 900;
+    font-family: 'Unigeo 64';
+}
+
+.contactDescription {
+
+  font-size: 1.2rem;
+}
+
+.contactList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.contactItem {
+  margin-bottom: 0.5rem;
+}

@@ -11,7 +11,7 @@ const ProjectSection = () => {
   console.log(items);
 
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 6;
+  const itemsPerPage = 3;
 
   // Calculate the start and end index
   const indexOfLastItem = currentPage * itemsPerPage;
@@ -30,10 +30,12 @@ const ProjectSection = () => {
 
   return (
     <section className={style.projectsSection}>
-      <h2 className={style.projectsTitle}>PROJECTS</h2>
-      <p className={style.projectsDescription}>
-        Here are some of my projects. Click on the buttons to see more details or visit the live demos.
-      </p>
+      <div className={style.projectsHeader}>
+        <h2 className={style.projectsTitle}>PROJECTS</h2>
+        <p className={style.projectsDescription}>
+          Here are some of my projects. Click on the buttons to see more details or visit the live demos.
+        </p>
+      </div>
 
       {/* List of items for the current page */}
       <div className={style.projectsContainer}>

@@ -13,8 +13,12 @@
   font-size: 1.2rem;
 }
 
+.projectsHeader {
+  text-align: center;
+}
+
 .projectsTitle {
-  font-size: 2.3rem;
+  font-size: 3rem;
     font-weight: 900;
     font-family: 'Unigeo 64';
 

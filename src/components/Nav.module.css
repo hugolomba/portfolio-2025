@@ -3,7 +3,7 @@ nav {
     justify-content: space-between;      
     width: 100%; 
     align-items: center;
-    font-family: "Unigeo 32";
+    /* font-family: "Unigeo 32"; */
 ;
 
 }
@@ -11,7 +11,7 @@ nav {
 
 
 .navList {
-    font-family: "Unigeo 64";
+    font-family: "Unigeo 32";
     font-size: 1.4rem;
     font-weight: 500;
     display: flex;
@@ -19,6 +19,7 @@ nav {
     list-style: none;
     padding: 0;
     align-items: center;
+    font-weight: bold
 }
 
 
@@ -30,13 +31,14 @@ nav {
   font-weight: 600;
   font-size: 1.2rem;
   display: inline-block;
-  padding-left: 1.5rem; 
+  padding-left: 1rem; 
   transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), color 0.3s ease;
 }
 
 
 .navList a::before {
   content: '→'; 
+ 
   position: absolute;
   left: 0;
   opacity: 0;

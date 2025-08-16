@@ -1,0 +1,43 @@
+.infoCardContainer {
+width: 100%;
+max-width: 84.5rem;       /* 1352px / 16 */
+background: #FFFFFF;
+border: 0.0625rem solid #282825; /* 1px / 16 */
+box-shadow: 0.1875rem 0.1875rem 0 #282825; /* 3px / 16 */
+border-radius: 1.25rem;   /* 20px / 16 */
+/* height: 100%; */
+padding: 2rem;        /* 20px / 16 */
+  animation: fadeInOut 0.4s ease forwards;
+
+}
+
+.infoCardContainer:hover {
+    box-shadow: 0.25rem 0.25rem 0 #282825; /* 4px / 16 */
+    transform: translateY(-0.125rem); /* 2px / 16 */
+
+}
+
+.infoCardTitle {
+text-transform: none;
+margin-top: 0;
+margin-bottom: 0.75rem; /* 12px / 16 */
+font-family: "Unigeo 64", Arial, sans-serif;
+font-size: 1.75rem; /* 28px / 16 */
+font-weight: 900;
+line-height: 120%;
+}
+
+.fade {
+  animation: fadeInOut 0.4s ease forwards;
+}
+
+@keyframes fadeInOut {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
