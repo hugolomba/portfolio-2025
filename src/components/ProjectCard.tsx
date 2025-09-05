@@ -7,7 +7,9 @@ import { TbWorld } from "react-icons/tb";
 type Project = {
   title: string;
   technologies: string[];
-  description: string;
+  shortDescription: string;
+  id: number;
+  longDescription: string;
   images: string[];
   github: string;
   link: string;

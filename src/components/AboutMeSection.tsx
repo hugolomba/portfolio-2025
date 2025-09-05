@@ -59,7 +59,7 @@ export default function AboutMeSection() {
         </div>
 <div className={styles.aboutMeCards}>
                 {activeCard === 1 && (
-                    <InfoCard title="About Me" cardState={activeCard}>
+                    <InfoCard title="About Me">
                   
 <>
 <p>
@@ -78,7 +78,7 @@ export default function AboutMeSection() {
    
                 )}  
                 {activeCard === 2 && (
-                    <InfoCard title="Skills" cardState={activeCard}>
+                    <InfoCard title="Skills">
                         <>
                         {skillsData.map((skill, index) => (
         <div key={index} className={styles.skillCard}>
@@ -95,7 +95,7 @@ export default function AboutMeSection() {
                     </InfoCard>
                 )} 
                 {activeCard === 3 && (
-                    <InfoCard title="Experiences" cardState={activeCard}>
+                    <InfoCard title="Experiences">
                          <>
          <p>
   I worked for seven years in banking at <strong>Itaú Unibanco (Brazil)</strong>, progressing from Cashier and Business Agent to Operational Supervisor and Treasury & Services Leader, where I developed strong skills in <strong>discipline, leadership, problem-solving, and communication</strong>. I’ve always been passionate about technology, which led me to pursue a career in this field.

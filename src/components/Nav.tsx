@@ -1,12 +1,9 @@
 import Button from './Button'
 import styles from './Nav.module.css'
 import logo1 from '../assets/logo1.png'
-import logo2 from '../assets/logo2.png'
-import logo3 from '../assets/logo3.png'
-import logo4 from '../assets/logo4.png'
 import HamburgerButton from './HamburgerButton'
 import { useState } from 'react'
-// import logo5 from '../assets/logo5.png'
+
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);

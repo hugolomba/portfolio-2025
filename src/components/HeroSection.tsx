@@ -6,8 +6,7 @@ import Button from './Button';
 import mainPic from '../assets/main-pic.svg';
 
 import comp1 from "../assets/hero/Component-1.svg"    
-import comp2 from "../assets/hero/Component.svg"
-import test from "../assets/aboutme1.png"
+
 
 const HeroSection: React.FC = () => {
   return (
