@@ -16,6 +16,7 @@ transition: box-shadow 0.25s cubic-bezier(.645,.045,.355,1), transform 0.25s cub
 display: inline-block;
 font-family: var(--text-font-1);
 transition: all 0.5s;
+text-align: center;
 }
 
 

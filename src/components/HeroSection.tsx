@@ -13,7 +13,7 @@ const HeroSection: React.FC = () => {
   return (
     <section className={styles.heroContainer}>
       <img className={styles.heroComponent1} src={comp1} alt="Component 1" />
-     <div className={styles.heroInfo}>
+      <div className={styles.heroInfo}>
       
       <div className={styles.heroText}>
           <span className={styles.heroGreeting}>Hello, my name is</span>
@@ -23,7 +23,7 @@ const HeroSection: React.FC = () => {
 
       </div>
           <p className={styles.heroDescription}>
-        a developer and Science Computing student based in Dublin. I build engaging web experiences with JavaScript, TypeScript, React, Next.js, HTML, and CSS frameworks. I also have some back-end experience with Node.js, Express, databases, and cloud technologies like AWS. This is my portfolio, showcasing my projects, my story, and how we can work together.
+        a developer and Science Computing student based in Dublin. This is my portfolio, showcasing my projects, my story, and how we can work together.
         </p>
           <Button btnType='link' href='#aboutMe'>MORE INFO</Button>
         </div>

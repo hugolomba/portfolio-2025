@@ -34,3 +34,17 @@
 .contactItem {
   margin-bottom: 0.5rem;
 }
+
+
+@media (max-width: 767px) {
+  .contactSection {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .contactList {
+    /* flex-direction: column; */
+    gap: 1rem;
+  }
+}

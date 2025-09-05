@@ -75,13 +75,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 <span key={index} className={`${styles.technology} ${styles[getTechColor(tech)]}`}>{`#${tech} `}</span>
             ))}
         </div>
-        <p className={styles.description}>{project.description}</p>
+        <p className={styles.description}>{project.shortDescription}</p>
      
         <div className={styles.links}>
             <Button btnType='link' variant="cardButton" href={project.github} ><FaGithub /> GitHub</Button>
             <Button btnType='link' variant="cardButton" href={project.link} ><TbWorld /> Demo</Button>
         </div>
-        <Button btnType="button" variant="cardButton" href={project.link} target="">See More</Button>
+        <Button btnType="link" variant="cardButton" href={`/project/${project.id}`} target="">See More</Button>
     </div>
   )
 }

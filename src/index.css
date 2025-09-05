@@ -108,14 +108,18 @@ html {
 }
 
 #root{
-  /* min-height: 100vh; */
+  min-height: 100vh;
   /* min-width: 100vw; */
   /* scroll-snap-type: y mandatory;
   overflow-y: scroll; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 body {
   /* max-width: 1200px; */
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
   font-size: 1rem;
@@ -202,6 +206,9 @@ a:hover {
 @media (max-width: 768px) {
   html {
     font-size: 93.75%; /* 1rem = 15px */
+  }
+  body {
+    padding: 1rem 1rem;
   }
 }
 

@@ -5,6 +5,7 @@
     align-items: center;
     gap: 1.5rem;
     scroll-snap-align: start;
+    margin-bottom: 2rem;
 
 
 }
@@ -19,6 +20,7 @@
 
 .projectsTitle {
   font-size: 3rem;
+  margin-bottom: 1rem;
     font-weight: 900;
     font-family: 'Unigeo 64';
 
@@ -83,5 +85,25 @@
   }
   .paginationContainer {
     gap: 5px;
+  }
+}
+
+@media (max-width: 767px) {
+  .projectsSection {
+    padding: 2rem 1rem;
+    min-height: auto;
+  }
+
+  .projectsTitle {
+    font-size: 2.5rem;
+  }
+
+  .projectsContainer {
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 400px) {
+  .projectsTitle {
+    font-size: 2rem;
   }
 }

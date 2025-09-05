@@ -3,7 +3,7 @@ import style from "./ContactSection.module.css";
 
 export default function ContactSection() {
   return (
-    <section className={style.contactSection}>
+    <section id="contact" className={style.contactSection}>
         <div className={style.contactHeader}>
       <h2 className={style.contactTitle}>How you can find me</h2>
       <p className={style.contactDescription}>and how you can get in touch</p>

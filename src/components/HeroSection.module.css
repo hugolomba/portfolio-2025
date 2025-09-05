@@ -4,7 +4,7 @@
   min-height: calc(100vh - 2rem);
   display: flex;
   align-items: center;
-  padding: 2rem 2rem 2rem 0;
+  /* padding: 2rem 2rem 2rem 0; */
   gap: 6rem;
   position: relative;
 
@@ -71,4 +71,55 @@
     right: 0;
     z-index: -1;
     top: 0;
+}
+
+
+@media (max-width: 767px) {
+  
+  .heroContainer {
+    height: 100vh;
+    /* margin-top: 4rem; */
+    /* margin-bottom: 10rem; */
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+    gap: 2rem;
+    min-height: auto;
+    justify-content: space-evenly;
+  }
+
+  .heroImageWrapper {
+    flex: none;
+    width: 100%;
+    /* height: 100%; */
+    /* background-color: lightgray; */
+  }
+
+  .heroImage {
+    width: 20rem;
+    /* display: none; */
+  }
+
+  .heroInfo {
+    align-items: center;
+    flex: none;
+    gap: 2rem;
+  }
+
+  .heroName {
+    font-size: 4rem;
+  }
+
+  .heroGreeting {
+    font-size: 2rem;
+  }
+
+  .heroComponent1 {
+    /* display: none; */
+    top: -30%;
+    /* right: -5%; */
+    width: 50%;
+
+  }
+
 }
