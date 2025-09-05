@@ -1,4 +1,4 @@
-import styles from './AboutMeSection.module.css';
+import styles from "./AboutMeSection.module.css"
 import Button from './Button';
 import InfoCard from './InfoCard';
 import { useState } from 'react';
