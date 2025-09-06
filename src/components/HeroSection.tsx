@@ -3,12 +3,9 @@
 import React from 'react';
 import styles from './HeroSection.module.css';
 import Button from './Button';
-import mainPic from '../assets/main-pic.svg';
-import profilePic from '../assets/hero.png';
 import profilePic2 from '../assets/hugohero2.png';
 import comp1 from "../assets/hero/Component-1.svg"    
 import decBottom from "../assets/dec-bottom.png"
-import decTop from "../assets/dec-top.png"
 import decTopOne from "../assets/dec-top-1.png"
 
 
