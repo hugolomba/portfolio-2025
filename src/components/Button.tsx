@@ -9,7 +9,6 @@ type ButtonProps = {
 } & React.AnchorHTMLAttributes<HTMLAnchorElement> & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 export default function Button({ children, variant, onClick, btnType, ...rest }: ButtonProps) {
-console.log(variant, "variant")
 
     
   if (btnType === 'button') {
@@ -29,7 +28,7 @@ console.log(variant, "variant")
       <a
         className={`${styles.button} ${variant ? styles[variant] : ''}`}
         href={rest.href}
-        target="_blank"
+        // target="_blank"
         rel="noopener noreferrer"
         {...rest}
       >

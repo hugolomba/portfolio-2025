@@ -15,6 +15,14 @@
     box-shadow: 0px 0px 0px 2px var(--new--titles);
     transition: box-shadow .25s cubic-bezier(.645,.045,.355,1), transform .25s cubic-bezier(.645,.045,.355,1);
 
+
+border: 0.125rem solid var(--new--titles); 
+box-shadow: 0.1875rem 0.1875rem 0 0 var(--new--titles);
+border-radius: 0.75rem; 
+transition: box-shadow 0.25s cubic-bezier(.645,.045,.355,1), transform 0.25s cubic-bezier(.645,.045,.355,1);
+transition: all 0.5s;
+
+
 }
 .title {
     font-size: 1.5rem;
@@ -22,20 +30,27 @@
     /* color: var(--main-text); */
     font-weight: bold;
     text-align: center;
-    /* background-color: var(--main-text); */
+    background-color: var(--main-text);
     border-radius: 10px;
+
+        border: 0.125rem solid var(--new--titles); 
+    box-shadow: 0.1rem 0.1rem 0 0rem var(--new--titles);
     
 }
 
 
 .image {
     border-radius: 10px;
-    border: 2px solid black;    
+    /* border: 2px solid black;     */
     width: 100%;
     object-fit: cover;
     max-width: 25rem;
     height: 12rem;
     display: block;
+    margin-left: auto;
+    border: 0.125rem solid var(--new--titles); 
+    box-shadow: 0.1rem 0.1rem 0 0rem var(--new--titles);
+
 }
 
 .technologies {
@@ -59,6 +74,12 @@
     border-radius: 10px;
     padding: 0.5rem;
     border: 2px solid black;
+
+    border: 0.125rem solid var(--new--titles); 
+box-shadow: 0.1875rem 0.1875rem 0 0 var(--new--titles);
+border-radius: 0.75rem; 
+transition: box-shadow 0.25s cubic-bezier(.645,.045,.355,1), transform 0.25s cubic-bezier(.645,.045,.355,1);
+transition: all 0.5s;
 
 }
 

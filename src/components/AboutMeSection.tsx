@@ -49,15 +49,23 @@ export default function AboutMeSection() {
     </div>
         
     
-     
+   
         <div className={styles.aboutMeColumns}>
-
+          <div className={styles.divider}>
             <div className={styles.controlButtons}>
             <Button btnType='button' onMouseOver={() => handleCardChange(1)}>About Me</Button>
             <Button btnType='button' onMouseOver={() => handleCardChange(2)}>Skills</Button>
             <Button btnType='button' onMouseOver={() => handleCardChange(3)}>Experiences</Button>
         </div>
-<div className={styles.aboutMeCards}>
+
+        <div className={styles.aboutMeImagesMobile}>
+        <img src={activeCard === 1 ? aboutMeOne : activeCard === 2 ? aboutMeTwo : aboutMeThree} alt="About Me Image" />
+        </div>
+        </div>
+    
+
+
+        <div className={styles.aboutMeCards}>
                 {activeCard === 1 && (
                     <InfoCard title="About Me">
                   
@@ -113,7 +121,7 @@ export default function AboutMeSection() {
                 )}     
             </div>
        <div className={styles.aboutMeImages}>
-        <img src={activeCard === 1 ? aboutMeOne : activeCard === 2 ? aboutMeTwo : aboutMeThree} alt="About Me Image 1" />
+        <img src={activeCard === 1 ? aboutMeOne : activeCard === 2 ? aboutMeTwo : aboutMeThree} alt="About Me Image" />
 
  
         </div>

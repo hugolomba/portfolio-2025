@@ -9,6 +9,7 @@ import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ProjectDetail from './components/ProjectDetail'
+import Blog from './components/Blog'
 
 
 
@@ -21,8 +22,9 @@ function App() {
   return (
     
     <>
-      <Nav  />
+
       <Router>
+          <Nav  />
         <Routes>
           <Route path="/" element={
             <>
@@ -33,6 +35,7 @@ function App() {
             </>
           } />
           <Route path='/project/:id' element={<ProjectDetail />} />
+          <Route path='/blog' element={<Blog />} />
         </Routes>
       </Router>
      

@@ -1,7 +1,7 @@
 "use strict";
 
 type Project = {
-  id: number;
+  id: string;
   title: string;
   technologies: string[];
   shortDescription: string;
@@ -18,7 +18,7 @@ type Projects = Project[];
 
 let projects: Projects = [
   {
-    id: 1,
+    id: "1",
     title: "The Abduction Game",
     technologies: ["JavaScript", "HTML5 Canvas", "CSS3"],
     shortDescription:
@@ -33,7 +33,7 @@ let projects: Projects = [
     link: "https://hugolomba.github.io/abduction-game/",
   },
   {
-    id: 2,
+    id: "2",
      title: "The Solar System",
     technologies: ["React", "NASA API", "API Solar System"],
     shortDescription:
@@ -51,7 +51,7 @@ The design is fully responsive, adapting seamlessly to different screen sizes. T
     link: "https://the-solarsystem.netlify.app/",
   },
   {
-    id: 3,
+    id: "3",
     title: "Catalog",
     technologies: ["React", "Node.js", "MongoDB", "Express"],
     shortDescription:
@@ -68,7 +68,7 @@ The design is fully responsive, adapting seamlessly to different screen sizes. T
     link: "https://catalog.hugomiranda.me/",
   },
   {
-    id: 4,
+    id: "4",
     title: "Bankist App",
     technologies: ["JavaScript", "HTML", "CSS"],
     shortDescription:
@@ -82,7 +82,7 @@ The design is fully responsive, adapting seamlessly to different screen sizes. T
     link: "https://hugolomba.github.io/bankist-app/",
   },
     {
-    id: 5,
+    id: "5",
     title: "The Abduction Game",
     technologies: ["JavaScript", "HTML5 Canvas", "CSS3"],
     shortDescription:
@@ -97,7 +97,7 @@ The design is fully responsive, adapting seamlessly to different screen sizes. T
     link: "https://hugolomba.github.io/abduction-game/",
   },
   {
-    id: 6,
+    id: "6",
     title: "The Solar System",
     technologies: ["React", "NASA API", "API Solar System"],
     shortDescription:
@@ -124,7 +124,7 @@ This project demonstrates my ability to **consume and build real-world APIs with
     link: "https://the-solarsystem.netlify.app/",
   },
   {
-    id: 7,
+    id: "7",
     title: "Catalog",
     technologies: ["React", "Node.js", "MongoDB", "Express", "MUI", "Axios"],
     shortDescription:
@@ -141,7 +141,7 @@ This project demonstrates my ability to **consume and build real-world APIs with
     link: "https://catalog.hugomiranda.me/",
   },
   {
-    id: 8,
+    id: "8",
     title: "Bankist App",
     technologies: ["JavaScript", "HTML", "CSS"],
     shortDescription:

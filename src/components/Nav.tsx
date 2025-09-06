@@ -4,6 +4,7 @@ import logo1 from '../assets/logo1.png'
 import HamburgerButton from './HamburgerButton'
 import { useState } from 'react'
 import SocialLinks from './SocialLinks'
+import { Link } from 'react-router'
 
 
 export default function Nav() {
@@ -12,10 +13,7 @@ export default function Nav() {
 
 
      <nav className={styles.nav}>
-        {/* <Button btnType='link' href="http://hugo-miranda.dev">
-      HM :)
-    </Button> */}
-      <img src={logo1} alt="Logo" className={styles.logo} />
+      <Link to='/'><img src={logo1} alt="Logo" className={styles.logo} /></Link>
 
       <HamburgerButton isOpen={isOpen} setIsOpen={setIsOpen} />
 
@@ -36,8 +34,8 @@ export default function Nav() {
       <ul className={styles.navList}>
         <li><a href='#aboutMe'>About</a></li>
         <li><a href='#projects'>Projects</a></li>
-        <li><a href='#blog'>Blog</a></li>
-        <li><Button btnType='button' href="#contact">Contact</Button></li>
+        <li><Link to='/blog'>Blog</Link></li>
+        <li><a href='#contact'>Contact</a></li>
       </ul>
     </nav>
 
