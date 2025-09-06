@@ -8,7 +8,7 @@ type Project = {
   title: string;
   technologies: string[];
   shortDescription: string;
-  id: number;
+  id: string;
   longDescription: string;
   images: string[];
   github: string;
