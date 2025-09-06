@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.link {
+border: 0.125rem solid var(--new--titles); 
+background-color: var(--main-yellow);  
+/* color: antiquewhite; */
+box-shadow: 0.1875rem 0.1875rem 0 0 var(--new--titles);
+border-radius: 5rem; 
+/* place-content: center; */
+/* align-items: center; */
+padding: 0.5rem;
+font-size: 0.1rem;
+/* font-family: "Unigeo", Arial, sans-serif; */
+/* font-weight: 600; */
+text-decoration: none;
+transition: box-shadow 0.25s cubic-bezier(.645,.045,.355,1), transform 0.25s cubic-bezier(.645,.045,.355,1);
+
+
+transition: all 0.5s;
+
+}
+.link:hover {
+  background-color: var(--main-yellow);                
+  text-transform: uppercase;
+}       
+
+.icon {
+    /* font-size: 0.5rem; */
+    width: 2.5rem;
+    height: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .link {
+    padding: 0.5rem;
+  }
+
+  .icon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}

@@ -9,6 +9,7 @@
   cursor: pointer;
   padding: 0;
   z-index: 10;
+  display: none;
 }
 
 .line {
@@ -30,4 +31,12 @@
 
 .line3 {
   transform: rotate(-45deg) translate(5px, -5px);
+}
+
+
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
 }
