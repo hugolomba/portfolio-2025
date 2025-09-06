@@ -1,10 +1,12 @@
 .projectDetailContainer {
- display: flex
-;
+display: flex;
     gap: 2rem;
     flex-direction: column;
     align-items: center;
-    padding: 4rem;
+    margin-top: 4rem;
+    font-size: 1.4rem;
+    text-align: justify;
+
 }
 
 .imagesContainer {
@@ -12,7 +14,7 @@
   gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 65%;
+  /* max-width: 65%; */
 }
 
 .linksContainer {

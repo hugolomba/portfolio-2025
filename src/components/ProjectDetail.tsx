@@ -16,6 +16,7 @@ interface ProjectType {
 
 const ProjectDetail: FC = () => {
 const { id } = useParams<{ id: string }>();
+console.log("ProjectDetail id:", id); // Debugging line
 const project: ProjectType | undefined = id ? projects[parseInt(id, 10)] : undefined;
 
     const techColors: string[] = [

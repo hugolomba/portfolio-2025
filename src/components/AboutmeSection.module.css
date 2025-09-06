@@ -153,8 +153,7 @@ li {
 @media (max-width: 767px) {
 
   .aboutMeSection {
-
-    padding: 2rem 1rem;
+    justify-content: space-between;
   }
 
   .aboutMeTitle {
@@ -173,8 +172,14 @@ li {
   .aboutMeCards {
     width: 100%;
     flex-direction: column;
-        height: 32rem;
+    height: 32rem;
     gap: 1.5rem;
+    /* overflow: hidden; */
+  }
+
+  .infoCard {
+
+    overflow: hidden;
   }
 
   .aboutMeImages {
