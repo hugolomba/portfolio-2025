@@ -4,7 +4,7 @@ display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 4rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-align: justify;
 
 }
@@ -50,7 +50,7 @@ display: flex;
     background-color: #339933;
 }
 .expressColor { 
-    background-color: #000000;
+    background-color: #5a29e4;
 }
 .mongoColor {
     background-color: #47a248;
@@ -64,6 +64,14 @@ display: flex;
 .htmlColor {
     background-color: #e34c26;
 }
-.axiosColor {
-    background-color: #5a29e4;
+
+.tailwindColor {
+    background-color: #38bdf8;
+}
+
+@media screen and (max-width: 768px) {
+    .projectDetailContainer {
+        font-size: 1.4rem;
+    }
+
 }

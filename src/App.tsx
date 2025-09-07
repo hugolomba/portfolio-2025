@@ -17,6 +17,7 @@ import Blog from './components/Blog'
 
 
 
+
 function App() {
 
   return (
@@ -36,6 +37,8 @@ function App() {
           } />
           <Route path='/project/:id' element={<ProjectDetail />} />
           <Route path='/blog' element={<Blog />} />
+          <Route path='/projects' element={<ProjectSection />} />
+          <Route path='*' element={<h2 style={{textAlign: 'center', marginTop: '2rem'}}>404 - Page Not Found</h2>} />
         </Routes>
       </Router>
      

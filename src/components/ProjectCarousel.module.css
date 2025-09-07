@@ -1,0 +1,45 @@
+.sliderContainer {
+  position: relative;
+  width: 100%;
+  max-width: 37.5rem;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.25rem 0.625rem rgba(0,0,0,0.1);
+}
+
+.sliderTrack {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  height: 18.75rem;
+  object-fit: contain;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.7);
+  border: none;
+  font-size: 1.5rem;
+  padding: 0rem 0.6rem;
+  cursor: pointer;
+  border-radius: 100%;
+  transition: background 0.2s;
+}
+
+.arrow:hover {
+  background: rgba(255,255,255,1);
+}
+
+.left {
+  left: 0.625rem;
+}
+
+.right {
+  right: 0.625rem;
+}
