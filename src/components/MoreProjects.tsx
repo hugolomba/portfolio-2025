@@ -1,5 +1,4 @@
 import type { FC } from "react";
-import Button from "./Button";
 import styles from "./MoreProjects.module.css";
 
 interface MoreProjectsProps {
@@ -8,7 +7,7 @@ interface MoreProjectsProps {
   image: string;
 }
 
-const MoreProjects: FC<MoreProjectsProps> = ({ id, title, image }) => {
+const MoreProjects: FC<MoreProjectsProps> = ({ title, image }) => {
   return (
     <div className={styles.moreProjects}>
         

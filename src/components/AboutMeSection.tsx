@@ -6,6 +6,9 @@ import { useState } from 'react';
 import aboutMeOne from "../assets/1.png"
 import aboutMeTwo from "../assets/2.png"
 import aboutMeThree from "../assets/3.png"
+import starDecoration from "../assets/decorations/dec-star.png"
+import faceDecoration from "../assets/decorations/face-decoration.png"
+
 
 
 export default function AboutMeSection() {
@@ -41,6 +44,7 @@ export default function AboutMeSection() {
 
   return (
     <section id="aboutMe" className={styles.aboutMeSection}>
+  
     <div className={styles.aboutMeHeader}>   
       <h2 className={styles.aboutMeTitle}>Who I am</h2>
       {/* <p className={styles.aboutMeDescription}>
@@ -66,6 +70,8 @@ export default function AboutMeSection() {
 
 
         <div className={styles.aboutMeCards}>
+            <img src={starDecoration} alt="Star Decoration" className={styles.starDecoration} />
+            <img src={faceDecoration} alt="Face Decoration" className={styles.faceDecoration} />
                 {activeCard === 1 && (
                     <InfoCard title="About Me">
                   
