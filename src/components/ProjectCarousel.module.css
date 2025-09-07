@@ -6,6 +6,7 @@
   overflow: hidden;
   border-radius: 0.75rem;
   box-shadow: 0 0.25rem 0.625rem rgba(0,0,0,0.1);
+    /* background-color: var(--retro-bg); */
 }
 
 .sliderTrack {

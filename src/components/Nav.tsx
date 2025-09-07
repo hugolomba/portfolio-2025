@@ -4,11 +4,26 @@ import logo1 from '../assets/logo1.png'
 import HamburgerButton from './HamburgerButton'
 import { useState } from 'react'
 import SocialLinks from './SocialLinks'
-import { Link } from 'react-router'
+import { Link, useNavigate } from 'react-router'
 
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate(); 
+
+  const handleScrollToSection = (sectionId: string) => {
+    setIsOpen(false);
+    if (window.location.pathname !== '/') {
+      navigate(`/`, { replace: false });
+      setTimeout(() => {
+        document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+      }, 50); 
+    } else {
+      document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+
   return (
 
 
@@ -20,10 +35,9 @@ export default function Nav() {
       {isOpen && (
         <>
         <ul className={styles.mobileMenu}>
-          <li><a href='#aboutMe' onClick={() => setIsOpen(false)}>About</a></li>
-          <li><a href='#projects' onClick={() => setIsOpen(false)}>Projects</a></li>
-          <li><a href='#blog' onClick={() => setIsOpen(false)}>Blog</a></li>
-          {/* <li><Button btnType='button' href="#contact" onClick={() => setIsOpen(false)}>Contact</Button></li> */}
+          <li><button className={styles.mobileMenuButton} onClick={() => handleScrollToSection('aboutMe')}>About</button></li>
+          <li><button className={styles.mobileMenuButton} onClick={() => handleScrollToSection('projects')}>Projects</button></li>
+          <li><button className={styles.mobileMenuButton} onClick={() => handleScrollToSection('blog')}>Blog</button></li>
           <SocialLinks  />
         </ul>
         
@@ -32,10 +46,10 @@ export default function Nav() {
 
 
       <ul className={styles.navList}>
-        <li><a href='#aboutMe'>About</a></li>
-        <li><a href='#projects'>Projects</a></li>
-        <li><Link to='/blog'>Blog</Link></li>
-        <li><a href='#contact'>Contact</a></li>
+          <li><button className={styles.navButton} onClick={() => handleScrollToSection('aboutMe')}>About</button></li>
+          <li><button className={styles.navButton} onClick={() => handleScrollToSection('projects')}>Projects</button></li>
+          <li><button className={styles.navButton} onClick={() => handleScrollToSection('blog')}>Blog</button></li>
+          <li><button className={styles.navButton} onClick={() => handleScrollToSection('contact')}>Contact</button></li>
       </ul>
     </nav>
 

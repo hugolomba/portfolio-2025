@@ -10,12 +10,13 @@ interface MoreProjectsProps {
 
 const MoreProjects: FC<MoreProjectsProps> = ({ id, title, image }) => {
   return (
-    <div className={styles.MoreProjects}>
+    <div className={styles.moreProjects}>
+        
       <img className={styles.cardImage} src={image} alt={title} />
       <h4>{title}</h4>
-      <Button btnType="link" href={`/project/${id}`}>
+      {/* <Button variant="moreProjects" btnType="link" href={`/project/${id}`}>
         See Project
-      </Button>
+      </Button> */}
     </div>
   );
 };

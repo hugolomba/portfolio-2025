@@ -6,6 +6,7 @@ display: flex;
     margin-top: 4rem;
     font-size: 1.2rem;
     text-align: justify;
+    /* background-color: white; */
 
 }
 
@@ -40,6 +41,23 @@ display: flex;
     color: var(--retro-bg);
 }
 
+.moreProjectsContainer {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.moreProjectsCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
 .jsColor {
     background-color: #f7df1e;
 }
@@ -68,6 +86,8 @@ display: flex;
 .tailwindColor {
     background-color: #38bdf8;
 }
+
+
 
 @media screen and (max-width: 768px) {
     .projectDetailContainer {

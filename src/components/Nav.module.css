@@ -28,7 +28,7 @@ nav {
 
 
 
-.navList a {
+.navList button {
   position: relative;
   text-decoration: none;
   color: #1a1a1a;
@@ -40,7 +40,7 @@ nav {
 }
 
 
-.navList a::before {
+.navList button::before {
   content: '→'; 
  
   position: absolute;
@@ -53,12 +53,12 @@ nav {
 }
 
 
-.navList a:hover {
+.navList button:hover {
   transform: translateX(0.5rem);
   color: var(--yellow); 
 }
 
-.navList a:hover::before {
+.navList button:hover::before {
   opacity: 1;
   transform: translateX(0); 
 }
@@ -79,26 +79,23 @@ nav {
         display: block;
         position: absolute;
         top: 10px;
-        /* right: 10px; */
-        /* left: 10px; */
-        width: 100vw;
+        right: 10px;
+        left: 10px;
+        width: 95vw;
         height: 35vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        /* left: 50%; */
-        /* transform: translate(-50%, -50%); */
-        /* margin: auto; */
         background: white;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        list-style: none;
-        padding: 0;
-        font-size: 2rem;
-        font-weight: bold;
         font-family: "Unigeo 32";
+  }
 
-
-
+  .mobileMenuButton {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 600;
+    font-size: 1.8rem;
   }
 }
