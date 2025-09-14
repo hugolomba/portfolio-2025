@@ -1,5 +1,6 @@
 import type { FC } from "react";
 import styles from "./MoreProjects.module.css";
+import { Link } from "react-router-dom";
 
 interface MoreProjectsProps {
   id: string;
@@ -7,16 +8,18 @@ interface MoreProjectsProps {
   image: string;
 }
 
-const MoreProjects: FC<MoreProjectsProps> = ({ title, image }) => {
+const handleClick = () => {
+    window.scrollTo(0, 0); // scroll para o topo
+  };
+
+const MoreProjects: FC<MoreProjectsProps> = ({ title, image, id }) => {
   return (
-    <div className={styles.moreProjects}>
-        
-      <img className={styles.cardImage} src={image} alt={title} />
-      <h4>{title}</h4>
-      {/* <Button variant="moreProjects" btnType="link" href={`/project/${id}`}>
-        See Project
-      </Button> */}
-    </div>
+    <Link  to={`/project/${id}`} className={styles.moreProjects} onClick={handleClick}>
+      
+        <img className={styles.cardImage} src={image} alt={title} />
+        <h4>{title}</h4>
+  
+    </Link>
   );
 };
 

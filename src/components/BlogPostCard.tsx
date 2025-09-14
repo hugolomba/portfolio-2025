@@ -1,6 +1,6 @@
 import styles from './BlogPostCard.module.css';
 
-export default function BlogPostCard({ title, excerpt, date, link, author }: { title: string; excerpt: string; date: string; link: string; author: string }) {
+export default function BlogPostCard({ title, excerpt, date, author }: { title: string; excerpt: string; date: string; link: string; author: string }) {
     return (
         <div className={styles.blogPostCard}>
             <h3 className={styles.blogPostCardTitle}>{title}</h3>

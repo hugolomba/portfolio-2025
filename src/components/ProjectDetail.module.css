@@ -3,10 +3,11 @@ display: flex;
     gap: 2rem;
     flex-direction: column;
     align-items: center;
-    margin-top: 4rem;
+    margin-top: 6rem;
     font-size: 1.2rem;
     text-align: justify;
     /* background-color: white; */
+    padding: 2rem;
 
 }
 

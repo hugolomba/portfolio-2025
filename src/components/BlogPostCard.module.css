@@ -16,7 +16,9 @@
     transition: all 0.5s;
     /* background-color: var(--new--blue); */
     /* color: var(--new--blue); */
-    background-color: white;
+    /* background-color: white; */
+    /* background-color: var(--background1); */
+
 }
 
 .blogPostCard:hover {
