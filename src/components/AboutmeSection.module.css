@@ -8,6 +8,8 @@
     /* padding: 4rem 2rem; */
     /* gap: 2rem;s */
     position: relative;
+    scroll-margin-top: 12vh;
+    padding: 1rem;
 
 }
 

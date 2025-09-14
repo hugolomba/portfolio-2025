@@ -1,7 +1,8 @@
 .blogContainer {
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 2rem;
+  scroll-margin-top: 12vh;
 }

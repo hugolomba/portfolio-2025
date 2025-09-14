@@ -7,6 +7,7 @@
   /* padding: 2rem 2rem 2rem 0; */
   gap: 6rem;
   position: relative;
+   margin-top: 4rem;
 
   /* scroll-snap-align: start; */
 }
@@ -142,14 +143,16 @@
   .heroDecTopOne {
     position: absolute;
     width: 20%;
-    top: 65%;
+    top: 75%;
     right: 80%;
   }
 
   .heroDecBottom {
     position: absolute;
-    /* width: 80%; */
-    /* bottom: 0; */
+    width: 85%;
+    /* bottom: 10%; */
+    top: 2%;
+    left: 5%;
   }
 
 }

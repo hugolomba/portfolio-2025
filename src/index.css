@@ -115,17 +115,18 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
 body {
   /* max-width: 1200px; */
-  max-width: 1200px;
+  /* max-width: 1400px; */
   margin: 0 auto;
-  padding: 0 1rem;
+  /* padding: 0 1rem; */
   font-size: 1rem;
   font-family: var(--text-font-2);
   min-height: 100vh;
-  padding: 1rem 2.5rem;
+  /* padding: 1rem 2.5rem; */
   display: flex;
   flex-direction: column;
 
@@ -207,9 +208,7 @@ a:hover {
   html {
     font-size: 93.75%; /* 1rem = 15px */
   }
-  body {
-    padding: 1rem 1rem;
-  }
+
 }
 
 @media (max-width: 480px) {

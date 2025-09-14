@@ -1,0 +1,44 @@
+.blogSection {
+     /* min-height: 90vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    scroll-snap-align: start;
+    width: 100%;
+    scroll-margin-top: 12vh;
+    padding: 0 1rem;
+    margin-top: 4rem;
+
+    
+}
+
+.blogPostsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+.blogTitle {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 900;
+    font-family: 'Unigeo 64';
+}
+
+
+@media (min-width: 768px) {
+    .blogPostsContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      
+        /* gap: 2rem; */
+    }
+    .blogPostsContainer a {
+        width: 30%;
+    }
+}

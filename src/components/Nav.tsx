@@ -1,6 +1,6 @@
 
 import styles from './Nav.module.css'
-import logo1 from '../assets/logo1.png'
+import logo1 from '../assets/logo5.png'
 import HamburgerButton from './HamburgerButton'
 import { useState } from 'react'
 import SocialLinks from './SocialLinks'
@@ -46,10 +46,10 @@ export default function Nav() {
 
 
       <ul className={styles.navList}>
-          <li><button className={styles.navButton} onClick={() => handleScrollToSection('aboutMe')}>About</button></li>
-          <li><button className={styles.navButton} onClick={() => handleScrollToSection('projects')}>Projects</button></li>
-          <li><button className={styles.navButton} onClick={() => handleScrollToSection('blog')}>Blog</button></li>
-          <li><button className={styles.navButton} onClick={() => handleScrollToSection('contact')}>Contact</button></li>
+          <li className={styles.navButton} onClick={() => handleScrollToSection('aboutMe')}>About</li>
+          <li className={styles.navButton} onClick={() => handleScrollToSection('projects')}>Projects</li>
+          <li className={styles.navButton} onClick={() => handleScrollToSection('blog')}>Blog</li>
+          <li className={styles.navButton} onClick={() => handleScrollToSection('contact')}>Contact</li>
       </ul>
     </nav>
 

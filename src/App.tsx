@@ -10,6 +10,7 @@ import Footer from './components/Footer'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ProjectDetail from './components/ProjectDetail'
 import Blog from './components/Blog'
+import BlogSection from './components/BlogSection'
 
 
 
@@ -32,6 +33,7 @@ function App() {
               <HeroSection  />
               <AboutMeSection  />
               <ProjectSection  />
+              <BlogSection  />
               <ContactSection  />
             </>
           } />
