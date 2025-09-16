@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ProjectDetail from './components/ProjectDetail'
 import Blog from './components/Blog'
 import BlogSection from './components/BlogSection'
+import PostDetail from './components/PostDetail'
 
 
 
@@ -38,7 +39,8 @@ function App() {
             </>
           } />
           <Route path='/project/:id' element={<ProjectDetail />} />
-          <Route path='/blog' element={<Blog />} />
+          <Route path='/blog' element={<BlogSection />} />
+          <Route path='/blog/post/:id' element={<PostDetail />} />
           <Route path='/projects' element={<ProjectSection />} />
           <Route path='*' element={<h2 style={{textAlign: 'center', marginTop: '2rem'}}>404 - Page Not Found</h2>} />
         </Routes>

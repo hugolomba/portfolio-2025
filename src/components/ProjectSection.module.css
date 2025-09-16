@@ -7,7 +7,8 @@
     scroll-snap-align: start;
     margin-bottom: 2rem;
 
-    scroll-margin-top: 12vh; /* Adjust based on your nav height */
+    scroll-margin-top: 12vh; 
+    margin-top: 6rem;
 
 
 }

@@ -47,9 +47,6 @@ export default function AboutMeSection() {
   
     <div className={styles.aboutMeHeader}>   
       <h2 className={styles.aboutMeTitle}>Who I am</h2>
-      {/* <p className={styles.aboutMeDescription}>
-        And what I can do for you!
-      </p> */}
     </div>
         
     
@@ -72,61 +69,9 @@ export default function AboutMeSection() {
         <div className={styles.aboutMeCards}>
             <img src={starDecoration} alt="Star Decoration" className={styles.starDecoration} />
             <img src={faceDecoration} alt="Face Decoration" className={styles.faceDecoration} />
-                {activeCard === 1 && (
-                    <InfoCard title="About Me">
-                  
-<>
-<p>
-  I’m a curious and adaptable person with a strong interest in technology. I started my career in customer service and banking, where I developed valuable skills in <strong>communication, leadership, and problem-solving</strong>. These experiences taught me how to work with people, manage challenges, and stay organised under pressure.
-</p>
-
-<p>
-  I’ve always been passionate about understanding how things work, which led me to explore technology and coding. In 2022, I completed a <strong>web development bootcamp</strong> and started building projects that allowed me to put theory into practice and learn by doing.
-</p>
-
-<p>
-  In 2023, I made a decisive move to <strong>Ireland</strong> to improve my English and fully focus on a career in tech. I’m now pursuing a <strong>Higher Diploma in Science in Computing</strong>, continuously developing projects and improving my skills as a software developer every day.
-</p>
-</>
-        </InfoCard>
-   
-                )}  
-                {activeCard === 2 && (
-                    <InfoCard title="Skills">
-                        <>
-                        {skillsData.map((skill, index) => (
-        <div key={index} className={styles.skillCard}>
-          <img src={skill.icon} alt={skill.title} className={styles.icon} />
-          <h3>{skill.title}</h3>
-          <ul>
-            {skill.items.map((item, i) => (
-              <li key={i}>{item}</li>
-            ))}
-          </ul>
+            <InfoCard activeCard={activeCard} />
         </div>
-      ))}
-                        </>
-                    </InfoCard>
-                )} 
-                {activeCard === 3 && (
-                    <InfoCard title="Experiences">
-                         <>
-         <p>
-  I worked for seven years in banking at <strong>Itaú Unibanco (Brazil)</strong>, progressing from Cashier and Business Agent to Operational Supervisor and Treasury & Services Leader, where I developed strong skills in <strong>discipline, leadership, problem-solving, and communication</strong>. I’ve always been passionate about technology, which led me to pursue a career in this field.
-</p>
-
-<p>
-  In 2022, I completed a <strong>web development bootcamp</strong> and began building projects. In 2023, I made a decisive change: I left my job, moved to <strong>Ireland</strong> to improve my English, and fully committed myself to a career in tech.
-</p>
-
-<p>
-  After a year and a half dedicated to improving my English, I am now pursuing a <strong>Higher Diploma in Science in Computing</strong> while continuing to study independently and develop projects that you can explore in my portfolio.
-</p>
-  </>
-                    </InfoCard>
-                )}     
-            </div>
-       <div className={styles.aboutMeImages}>
+        <div className={styles.aboutMeImages}>
         <img src={activeCard === 1 ? aboutMeOne : activeCard === 2 ? aboutMeTwo : aboutMeThree} alt="About Me Image" />
 
  
