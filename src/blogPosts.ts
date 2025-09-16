@@ -1,6 +1,14 @@
 const blogPosts = [
-{
-    id: "1",
+    {
+        id: "1",
+        title: "Understanding React Hooks",
+        excerpt: "A deep dive into the world of React Hooks and how they can simplify your code.",
+        date: "2023-10-01",
+        link: "https://example.com/react-hooks",
+        author: "Jane Doe"
+    },
+    {
+    id: "2",
     title: "Refactoring a Beloved Project: The Solar System",
     excerpt: "Revisiting my old project 'The Solar System' and rebuilding it from scratch with React, TypeScript, Tailwind, and a custom Node.js API. Now it includes dwarf planets, asteroids, galaxies, and interactive curiosities about each celestial body.",
     date: "2025-09-16",
@@ -38,40 +46,7 @@ For recruiters or anyone exploring this project, it clearly demonstrates that I 
 
 In summary, The Solar System is more than a project about planets — it’s a project about learning, evolving, and transforming knowledge into something you can see and interact with.
 `
-},
-{
-    id: "2",
-    title: "Rebuilding the Abduction Game: Leveling Up My JavaScript Skills",
-    excerpt: "A complete revamp of my Abduction Game project, turning it into a more interactive and engaging experience using vanilla JavaScript, CSS animations, and modern coding practices.",
-    date: "2025-09-16",
-    link: "https://hugolomba.github.io/abduction-game/",
-    author: "Hugo Lomba",
-    content: `
-When I first created the Abduction Game, it was a simple project that helped me practice basic JavaScript logic and DOM manipulation. The game involved abducting characters with a UFO and keeping track of the score. It was fun, but I knew it had a lot of potential for improvement.
-
-Rebuilding it now was an opportunity to take it to the next level. I rewrote the entire game using modern JavaScript practices, improved animations with CSS, and enhanced the interactivity, making the game smoother and more engaging.
-
-What changed?
-
-- The game now features multiple levels with increasing difficulty
-- Improved UFO movement and character animations
-- Score tracking with persistent high scores
-- A more interactive and visually appealing interface
-
-What I learned and achieved
-
-Rewriting the game pushed me to better structure my code and organize functions for scalability. I also focused on enhancing the user experience through responsive design and smooth animations.
-
-This project showcases my ability to:
-- Use vanilla JavaScript effectively for interactive projects
-- Structure code in a maintainable and scalable way
-- Apply CSS animations to improve user experience
-- Turn a small idea into a fun, playable project
-
-In short, the Abduction Game is not just a game — it’s a demonstration of my growth as a developer, my attention to detail, and my ability to create interactive digital experiences from scratch.
-`
 }
-
 ];
 
 export default blogPosts;

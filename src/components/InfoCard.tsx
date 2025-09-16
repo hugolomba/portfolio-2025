@@ -5,7 +5,7 @@ import { IoLogoCss3 } from "react-icons/io";
 
 import { SiTypescript, SiExpress, SiMongodb, SiPostgresql, SiTailwindcss } from "react-icons/si";
 import { DiNodejs } from "react-icons/di";
-import { RiReactjsFill } from 'react-icons/ri';
+
 
 
 

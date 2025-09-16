@@ -13,28 +13,6 @@ import faceDecoration from "../assets/decorations/face-decoration.png"
 
 export default function AboutMeSection() {
 
-    const skillsData = [
-  {
-    title: 'Frontend',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
-    items: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'HTML', 'CSS (Tailwind, MUI)'],
-  },
-  {
-    title: 'Backend',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
-    items: ['Node.js', 'Express', 'REST APIs', 'MongoDB', 'PostgreSQL'],
-  },
-  {
-    title: 'Tools & Others',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
-    items: ['Git/GitHub', 'Prisma', 'Docker', 'AWS basics', 'CI/CD'],
-  },
-  {
-    title: 'Soft Skills',
-    icon: 'https://cdn-icons-png.flaticon.com/512/1946/1946429.png',
-    items: ['Problem-solving', 'Teamwork', 'Adaptability', 'Customer-focused mindset'],
-  },
-];
 
     const [activeCard, setActiveCard] = useState<number>(1);
 
