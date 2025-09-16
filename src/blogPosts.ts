@@ -11,7 +11,7 @@ const blogPosts = [
         "https://res.cloudinary.com/dck0d5qwp/image/upload/v1758033084/Screenshot_2025-09-16_at_15.30.10_lfyenb.png",
         "https://res.cloudinary.com/dck0d5qwp/image/upload/v1758033084/Screenshot_2025-09-16_at_15.30.30_rk032d.png"
     ],
-    authorImage: "https://avatar.iran.liara.run/public/35",
+    authorImage: "https://res.cloudinary.com/dck0d5qwp/image/upload/v1756817903/users/avatar/g4riixckmylxp9mfgftr.jpg",
     content: `
 <article>
   <p style="text-indent: 2em;">When I first started learning React back in 2022, I created a small project called <strong>The Solar System</strong>.
@@ -69,7 +69,7 @@ const blogPosts = [
 
   <p>I’m really proud of how it turned out, and I hope it inspires others to revisit their old projects and see how far they’ve come.</p>
 <br>
-  <p>You can visite it here: <a href="the-solar-system.hugo-miranda.dev">the-solar-system.hugo-miranda.dev</a></p>
+  <p>You can visite it here: <a href="https://the-solar-system.hugo-miranda.dev" target="_blank">the-solar-system.hugo-miranda.dev</a></p>
 </article>
 
 `

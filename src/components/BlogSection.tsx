@@ -1,7 +1,7 @@
 import styles from './BlogSection.module.css';
 import BlogPostCard from './BlogPostCard';
 import Button from './Button';
-import { Link } from 'react-router';
+import { Link, Navigate } from 'react-router';
 import blogPosts from '../blogPosts';
 
 
@@ -10,7 +10,7 @@ import blogPosts from '../blogPosts';
 
 export default function BlogSection() {
     const isHomePage = window.location.pathname === "/";
-
+    
  
 
     return (
@@ -18,7 +18,7 @@ export default function BlogSection() {
             <h2 className={styles.blogTitle}>Latest Blog Posts</h2>
             <div className={styles.blogPostsContainer}>
                 {blogPosts.map((post, index) => (
-                    <Link to={`/blog/post/${index}`} key={index}>
+                    <Link to={`/blog/post/${index}`} key={index} onClick={() => window.scrollTo(0, 0)}>
                         <BlogPostCard {...post} />
                     </Link>
                 ))}
