@@ -1,12 +1,8 @@
-
-
 import styles from './PostDetail.module.css'
 import { useParams } from "react-router-dom";
 import blogPosts from "../blogPosts";
-import ProjectCarousel from './ProjectCarousel';
-
 import type { JSX } from "react";
-import ReactMarkdown from 'react-markdown';
+
 
 
 export default function PostDetail(): JSX.Element   {
