@@ -1,7 +1,7 @@
 import styles from './BlogSection.module.css';
 import BlogPostCard from './BlogPostCard';
 import Button from './Button';
-import { Link, Navigate } from 'react-router';
+import { Link } from 'react-router';
 import blogPosts from '../blogPosts';
 
 
