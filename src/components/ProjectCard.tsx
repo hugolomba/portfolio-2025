@@ -105,7 +105,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         btnType="link"
         variant="cardButton"
         href={`/project/${project.id}`}
-        target=""
       >
         See More
       </Button>

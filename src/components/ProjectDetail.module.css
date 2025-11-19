@@ -1,14 +1,12 @@
 .projectDetailContainer {
-display: flex;
-    gap: 2rem;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 6rem;
-    font-size: 1.2rem;
-    text-align: justify;
-    /* background-color: white; */
-    padding: 2rem;
-
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6rem;
+  font-size: 1.2rem;
+  text-align: justify;
+  padding: 2rem 8rem;
 }
 
 .imagesContainer {
@@ -27,72 +25,70 @@ display: flex;
 }
 
 .technologies {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-top: 0.5rem;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  justify-content: center;
 }
 
 .technology {
-    background-color: var(--pink);
-    padding: 0.2rem 0.5rem;
-    border-radius: 5px;
-    font-size: 0.8rem;
-    color: var(--retro-bg);
+  background-color: var(--pink);
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  color: var(--retro-bg);
 }
 
 .moreProjectsContainer {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 1rem;
-    align-items: center;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
 }
 
 .moreProjectsCards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
 }
 
 .jsColor {
-    background-color: #f7df1e;
+  background-color: #f7df1e;
 }
 .reactColor {
-    background-color: #61dafb;
+  background-color: #61dafb;
 }
 .nodeColor {
-    background-color: #339933;
+  background-color: #339933;
 }
-.expressColor { 
-    background-color: #5a29e4;
+.expressColor {
+  background-color: #5a29e4;
 }
 .mongoColor {
-    background-color: #47a248;
+  background-color: #47a248;
 }
 .typescriptColor {
-    background-color: #3178c6;
+  background-color: #3178c6;
 }
 .cssColor {
-    background-color: #264de4;
+  background-color: #264de4;
 }
 .htmlColor {
-    background-color: #e34c26;
+  background-color: #e34c26;
 }
 
 .tailwindColor {
-    background-color: #38bdf8;
+  background-color: #38bdf8;
 }
 
-
-
 @media screen and (max-width: 768px) {
-    .projectDetailContainer {
-        font-size: 1.4rem;
-    }
-
+  .projectDetailContainer {
+    font-size: 1.4rem;
+    padding: 2rem;
+  }
 }
